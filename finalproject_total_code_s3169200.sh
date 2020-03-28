@@ -5,7 +5,8 @@
 
 
 function TOTAL_TWEETS {
-	"""counts the amount of total tweets in a Karora Twitter data directory"""
+	"""counts the total amount of tweets containing "Groningen" in a Karora Twitter data directory"""
+	zgrep -owi "groningen" *.gz |\
 	wc -l
 }
 

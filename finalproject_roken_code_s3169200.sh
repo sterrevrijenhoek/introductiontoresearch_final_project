@@ -5,9 +5,9 @@
 
 
 function FIND_ROKEN {
-	"""counts the amount of tweets containing the word of 'roken' Karora Twitter data"""
-	zgrep -owi 'roken' *.gz |\
-	wc -l
+	"""counts the amount of tweets containing the word of 'roken' and 'Groningen' in the Karora Twitter data"""
+	zgrep "groningen" *.gz |\
+	zgrep -c "roken"
 }
 
 FIND_ROKEN
